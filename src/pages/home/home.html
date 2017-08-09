@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,12 +7,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content padding class="card-background-page">
+  <ion-card>
+    <img src="assets/img/vinyl_record.jpg" />
+    <div class="card-title">Composer</div>
+    <div class="card-subtitle">Standard & Tablature</div>
+    <button ion-button color="secondary" outline (click)="goToComposer()">Start</button>
+  </ion-card>
+  <ion-card>
+    <img src="assets/img/acoustic.jpg" />
+    <div class="card-title">Library</div>
+    <div class="card-subtitle">10 songs</div>
+    <button ion-button color="secondary" outline (click)="goToLibrary()">View</button>
+  </ion-card>
 </ion-content>
